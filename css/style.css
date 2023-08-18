@@ -448,6 +448,29 @@ body {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
+.card-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-text {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  padding: 40px;
+  font-size: 16px;
+  color: var(--cloud);
+  background-color: var(--iris);
+
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.project-card:hover .card-text {
+  transform: translateY(0);
+}
+
 .project .name {
   font-size: 20px;
   font-weight: 500;
